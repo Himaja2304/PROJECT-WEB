@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Color Palette Studio</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>About Color Palette Studio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="saved-palettes.html">Saved Palettes</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section id="project-goal">
+      <h2>Project Goal</h2>
+      <p>Your project focuses on personalized color recommendations. The goal is to extract colors from an uploaded image (primarily focusing on a person’s eyeball color, skin color, and hair color) and use this data to suggest a tailored color palette that best suits the person.</p>
+    </section>
+
+    <section id="key-features">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Image Upload and Processing:</strong> Users can upload a close-up photo of themselves. Extract pixel data from specific areas of the image:
+          <ul>
+            <li>Eyeball Color: Analyze eye region for dominant color.</li>
+            <li>Skin Tone: Detect and analyze skin tone.</li>
+            <li>Hair Color: Extract the primary hair color.</li>
+          </ul>
+        </li>
+        <li><strong>Personalized Color Suggestions:</strong> Based on the extracted colors, generate a customized color palette. Suggestions will follow color theory principles (e.g., complementary or contrasting colors) to enhance the user’s natural features.</li>
+        <li><strong>Interactive Output:</strong> Display detected eye, skin, and hair colors visually. Show a palette of recommended colors with their HEX or RGB values. Allow users to save or share the generated palette.</li>
+        <li><strong>Enhanced Features (Optional):</strong> 
+          <ul>
+            <li>Simulate color palettes for specific occasions (formal, casual, etc.).</li>
+            <li>Offer accessibility checks or colorblind-friendly suggestions.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How the Project Works</h2>
+      <h3>Image Processing:</h3>
+      <p>Use image processing techniques (like OpenCV or libraries such as color-thief.js) to extract dominant colors from specific facial regions. Algorithms will focus on identifying colors in the eye, skin, and hair regions.</p>
+
+      <h3>Color Palette Generation:</h3>
+      <p>Generate a palette of colors that complement the extracted features. Apply color harmony rules (e.g., analogous, triadic, or split-complementary).</p>
+
+      <h3>User Experience:</h3>
+      <p>A simple and responsive homepage where users can:
+        <ul>
+          <li>Upload an image.</li>
+          <li>View extracted colors and suggested palettes.</li>
+          <li>Save, download, or share the palette.</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="technology-stack">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li><strong>Front-end:</strong> HTML, CSS, JavaScript.</li>
+        <li><strong>Back-end :</strong> Store user data or saved palettes in a database and combinations.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Contact us | Terms of Use | Privacy Policy</p>
+    <p>&copy; 2025 Color Palette Studio</p>
+  </footer>
+
+
+</body>
+</html>

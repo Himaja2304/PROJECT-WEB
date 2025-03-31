@@ -1,0 +1,205 @@
+/* Unified Theme: Multi-Color Flower Logo */
+
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Unified font */
+  background-color: #fafafa;          /* Light background for consistency */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  /* Multi-color gradient inspired by your flower logo */
+  background: linear-gradient(
+    135deg,
+    #e53935, /* Red */
+    #fb8c00, /* Orange */
+    #fdd835, /* Yellow */
+    #43a047, /* Green */
+    #1e88e5, /* Blue */
+    #8e24aa  /* Purple */
+  );
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFEB3B; /* Bright yellow on hover */
+}
+
+nav a.active {
+  color: #FFEB3B; /* Highlight active link */
+}
+
+/* Main Content Section */
+main {
+  padding: 40px 20px;
+}
+
+/* Contact Information Section */
+#contact-info {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+#contact-info h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#contact-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#contact-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact-info ul li {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+#contact-info ul li a {
+  color: #e53935; /* Red accent from the gradient */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact-info ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Section */
+#contact-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+#contact-form h2 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#contact-form label {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #e53935; /* Red accent from the gradient */
+  outline: none;
+}
+
+#contact-form button {
+  padding: 14px 30px;
+  background-color: #e53935; /* Red from the gradient */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #c62828; /* Darker red on hover */
+  transform: translateY(-2px);
+}
+
+/* Footer Section */
+footer {
+  background-color: #2d2d2d;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+
+  #contact-info h2,
+  #contact-form h2 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+  

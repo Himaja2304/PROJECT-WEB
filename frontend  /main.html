@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Color Palette Studio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="saved-palettes.html">Saved Palettes</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Upload Section -->
+    <main>
+        <section id="upload-image">
+            <h2>Upload Your Image</h2>
+            <p>Upload an image to extract colors and get recommendations.</p>
+            <input type="file" id="image-input" accept="image/*">
+            
+            <!-- Image Preview -->
+            <div id="image-preview-container">
+                <img id="uploaded-image" alt="Uploaded Image Preview" style="display:none; max-width: 100%; height: auto;">
+            </div>
+
+            <button id="extract-btn">Extract Colors & Suggest</button>
+        </section>
+
+        <!-- Suggested Color Palette -->
+        <section id="suggest-colors">
+            <a href="saved-palettes.html" style="text-decoration: none; color: inherit;">
+                <h2 style="cursor: pointer;">Suggested Color Palette</h2>
+            </a>
+            <h3 id="palette-name" style="color: purple; margin-bottom: 10px;"></h3> <!-- Palette Name -->
+            <div id="color-palette" style="display: flex; gap: 10px;"></div> <!-- Color Display -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Color Palette Studio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

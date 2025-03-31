@@ -1,0 +1,213 @@
+/* Unified Theme: Multi-Color Flower Logo */
+
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;  /* Unified font */
+    background-color: #fafafa;           /* Light background for consistency */
+    color: #333;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0 20px;  /* Retained from original for layout spacing */
+  }
+  
+  /* Header Section */
+  header {
+    /* Multi-color gradient inspired by your flower logo */
+    background: linear-gradient(
+      135deg,
+      #e53935, /* Red */
+      #fb8c00, /* Orange */
+      #fdd835, /* Yellow */
+      #43a047, /* Green */
+      #1e88e5, /* Blue */
+      #8e24aa  /* Purple */
+    );
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #8e24aa; /* Purple accent from gradient */
+  }
+  
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation */
+  nav {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #FFEB3B; /* Bright yellow on hover */
+    text-decoration: underline;
+  }
+  
+  nav a.active {
+    color: #FFEB3B; /* Highlight active link */
+  }
+  
+  /* Main Content Section */
+  main {
+    margin-top: 50px;
+    padding: 30px 0;
+  }
+  
+  /* Project Goal Section */
+  #project-goal {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #project-goal h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  #project-goal p {
+    font-size: 1.3rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Key Features Section */
+  #key-features {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #key-features h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  #key-features ul {
+    list-style-type: none;
+  }
+  
+  #key-features ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  #key-features ul li ul {
+    margin-left: 30px;
+    list-style-type: circle;
+  }
+  
+  /* Technology Stack Section */
+  #technology-stack {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #technology-stack h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  #technology-stack ul {
+    list-style-type: none;
+  }
+  
+  #technology-stack ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  #about h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  #about p {
+    font-size: 1.3rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  footer p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    nav a {
+      font-size: 1rem;
+      margin: 0 12px;
+    }
+  
+    main {
+      padding: 20px 0;
+    }
+  
+    #project-goal h2,
+    #key-features h2,
+    #technology-stack h2,
+    #about h2 {
+      font-size: 2.2rem;
+    }
+  
+    footer p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,131 @@
+/* Unified Theme: Multi-Color Flower Logo */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML Styling */
+body, html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  /* Multi-color gradient inspired by your flower logo */
+  background: linear-gradient(
+    45deg,
+    #e53935,  /* Red */
+    #fb8c00,  /* Orange */
+    #fdd835,  /* Yellow */
+    #43a047,  /* Green */
+    #1e88e5,  /* Blue */
+    #8e24aa   /* Purple */
+  );
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-title img {
+  height: 50px;
+}
+
+.logo-title .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.2;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Welcome Section */
+.welcome-section {
+  height: 100vh;
+  background: url('istockphoto-1440114432-612x612.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.welcome-text h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #ddd;
+}
+
+/* Button Styling */
+.welcome-text .btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: #e53935; /* Use red from the logo palette */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.welcome-text .btn:hover {
+  background: #c62828; /* Darker red on hover */
+  transform: scale(1.1);
+}

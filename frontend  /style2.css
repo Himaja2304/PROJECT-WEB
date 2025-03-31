@@ -1,0 +1,151 @@
+/* Unified Theme: Multi-Color Flower Logo */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa; /* Light background for contrast */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header (optional, if you have a header in this page) */
+header {
+  /* Multi-color gradient inspired by your flower logo */
+  background: linear-gradient(
+    45deg,
+    #e53935, /* Red */
+    #fb8c00, /* Orange */
+    #fdd835, /* Yellow */
+    #43a047, /* Green */
+    #1e88e5, /* Blue */
+    #8e24aa  /* Purple */
+  );
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation (if present in this page) */
+nav {
+  margin-top: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFEB3B; /* Bright yellow on hover */
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: #FFEB3B; /* Highlight active link */
+}
+
+/* Saved Palettes Section */
+#saved-palettes {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#saved-palettes h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#saved-palettes p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Palette Grid */
+#palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.palette {
+  display: flex;
+  gap: 10px;
+}
+
+/* Individual Color Swatch */
+.color {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.color:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Section */
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to the bottom */
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  #saved-palettes {
+    margin-top: 30px;
+    width: 95%;
+  }
+}
